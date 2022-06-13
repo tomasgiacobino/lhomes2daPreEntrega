@@ -1,0 +1,42 @@
+.hero {
+  background-color: red;
+  background-image: url(../img/fondos/fotofondo1.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 50vh;
+}
+
+.hero .divIndex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 0px;
+  gap: 30px;
+}
+
+.hero .divIndex .divIndex2 {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.hero .divIndex .divIndex2 h1 {
+  font-size: 30px;
+}
+
+.hero .divIndex .divIndex2 h2 {
+  font-size: 25px;
+}
+
+.hero .divIndex .pMain {
+  font-size: 20px;
+}
+/*# sourceMappingURL=hero.css.map */

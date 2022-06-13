@@ -1,0 +1,99 @@
+.hero {
+    background-color: red;
+    background-image: url(../img/fondos/fotofondo1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 50vh;
+
+    .divIndex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 50px;
+        gap: 30px;
+
+        .divIndex2{
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 15px;
+
+            h1{
+                font-size: 30px;
+            }
+            h2{
+                font-size: 25px; 
+            }
+
+        }
+
+        .pMain{
+            font-size: 20px;
+        }
+    }
+
+}
+
+@media (min-width:769px) and (max-width:1023px) {
+
+
+    .hero {
+        height: 70vh;
+
+        .divIndex{
+            padding-top: 70px;
+            gap:70px;
+
+            .divIndex2{
+
+                h1{
+                    font-size: 40px;
+                }
+                h2{
+                    font-size: 35px; 
+                }
+
+            }
+
+            .pMain {
+                font-size: 30px;
+            }
+                
+        }
+    
+    }
+       
+}
+
+@media (min-width:1024px) {
+
+
+
+    .hero {
+        height: 100vh;
+
+        .divIndex{
+            padding-top: 100px;
+            gap:100px;
+
+            .divIndex2{
+                padding: 35px;
+
+                h1{
+                    font-size: 60px;
+                }
+
+                h2{
+                    font-size: 42px;
+                }
+            }
+
+            .pMain{
+                font-size: 40px;
+            }
+        
+        }
+    
+    }
+
+}    

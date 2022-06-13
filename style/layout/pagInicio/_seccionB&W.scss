@@ -1,0 +1,189 @@
+
+
+// SECTION BLACK 
+
+.seccionBlack{
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    height: auto;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "ubi"
+    "img"
+    "desc"
+    "boton"
+    ;
+
+        .pUbicacionB{
+            grid-area:ubi;
+            margin-bottom: 40px;
+            font-size: 30px;
+        }
+
+        .pDescripcionB{
+            margin-top:20px;
+            grid-area:desc;
+            font-size: 30px;
+        }
+
+        .buttonBlack{
+            grid-area:boton;
+            
+            margin-top: 1.5em;
+            padding: 1em;
+            border-radius: 15px;
+            border: 5px solid white;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .buttonBlack:hover{
+            background-color: white;
+            color: black;
+            border: 5px solid white;
+        
+        }
+
+        .imgPadre{
+            grid-area:img;
+            width: 100%;
+            height: auto;
+            display:grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            grid-template-areas:
+            "img1 img2"
+            "img3 img4";
+
+            figure{
+                margin: 0;
+            }
+            
+            .imgHijo1 figure img{
+                grid-area: img1;
+                width: 100%;
+            }
+            
+            .imgHijo2 figure img{
+                grid-area: img2;
+                width: 100%;
+                
+            }
+            .imgHijo3 figure img{
+                grid-area: img3;
+                width: 100%;
+            
+            }
+            .imgHijo4 figure img{
+                grid-area: img4;
+                width: 100%;
+            
+            }
+
+        }
+    
+}
+
+
+// SECCION WHITE
+
+
+.seccionWhite{
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: black;
+    height: auto;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "ubi"
+    "img"
+    "desc"
+    "boton"
+    ;
+
+        .pUbicacionW{
+            grid-area:ubi;
+            margin-bottom: 40px;
+            font-size: 30px;
+        }
+
+        .pDescripcionW{
+            margin-top:20px;
+            grid-area:desc;
+            font-size: 30px;
+        }
+
+        .buttonWhite{
+            grid-area:boton;
+            
+            margin-top: 1.5em;
+            padding: 1em;
+            border-radius: 15px;
+            border: 5px solid black;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .buttonWhite:hover{
+            background-color: black;
+            color: white;
+            border: 5px solid black;
+        
+        }
+
+
+        .imgPadre{
+            grid-area:img;
+            width: 100%;
+            height: auto;
+            display:grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            grid-template-areas:
+            "img1 img2"
+            "img3 img4";
+
+            figure{
+                margin: 0;
+            }
+            
+            .imgHijo1 figure img{
+                grid-area: img1;
+                width: 100%;
+            }
+            
+            .imgHijo2 figure img{
+                grid-area: img2;
+                width: 100%;
+                
+            }
+            .imgHijo3 figure img{
+                grid-area: img3;
+                width: 100%;
+            
+            }
+            .imgHijo4 figure img{
+                grid-area: img4;
+                width: 100%;
+            
+            }
+
+        }
+    
+}
+

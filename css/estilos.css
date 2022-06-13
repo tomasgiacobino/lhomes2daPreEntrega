@@ -1,0 +1,818 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: green;
+    font-family:'Noto Sans';
+}
+
+.footer {
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    height: auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_icons{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+}
+
+/*------------------------------------- INDEX ------------------------------------------------------- */
+
+.hero {
+    background-color: red;
+    background-image: url(../img/fondos/fotofondo1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 50vh;
+
+}
+
+.divIndex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    gap: 30px;
+
+}
+
+.divIndex2{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.divIndex2 h1{
+    font-size: 30px;
+}
+
+.divIndex2 h2{
+    font-size: 25px;
+}
+
+.pMain {
+    font-size: 20px;
+}
+
+/*------------------------------------- SeccionBlack ------------------------------------------------------- */
+
+.seccionBlack{
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    height: auto;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "ubi"
+    "img"
+    "desc"
+    "boton"
+    ;
+    
+}
+
+.pUbicacionB{
+    grid-area:ubi;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+
+.imgPadre{
+    grid-area:img;
+    width: 100%;
+    height: auto;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    "img1 img2"
+    "img3 img4";
+}
+
+figure{
+    margin: 0;
+}
+
+.imgHijo1 figure img{
+    grid-area: img1;
+    width: 100%;
+}
+
+.imgHijo2 figure img{
+    grid-area: img2;
+    width: 100%;
+    
+}
+.imgHijo3 figure img{
+    grid-area: img3;
+    width: 100%;
+
+}
+.imgHijo4 figure img{
+    grid-area: img4;
+    width: 100%;
+
+}
+
+.pDescripcionB{
+    margin-top:20px;
+    grid-area:desc;
+    font-size: 30px;
+}
+
+.buttonBlack{
+    grid-area:boton;
+    
+    margin-top: 1.5em;
+    padding: 1em;
+    border-radius: 15px;
+    border: 5px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.buttonBlack:hover{
+    background-color: white;
+    color: black;
+    border: 5px solid white;
+
+}
+
+/*------------------------------------- SeccionBlack ------------------------------------------------------- */
+
+/*------------------------------------- SeccionWhite ------------------------------------------------------- */
+
+.seccionWhite{
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: black;
+    height: auto;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "ubi"
+    "img"
+    "desc"
+    "boton"
+    ;
+    
+}
+
+.pUbicacionW{
+    grid-area:ubi;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.pDescripcionW{
+    margin-top:20px;
+    grid-area:desc;
+    font-size: 30px;
+}
+
+.buttonWhite{
+    grid-area:boton;
+    
+    margin-top: 1.5em;
+    padding: 1em;
+    border-radius: 15px;
+    border: 5px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+
+.buttonWhite:hover{
+    background-color: black;
+    color: white;
+    border: 5px solid black;
+
+}
+
+
+/*------------------------------------- SeccionWhite ------------------------------------------------------- */
+
+
+/*------------------------------------- FinalMain ------------------------------------------------------- */
+
+.finalMain{
+    background-image: linear-gradient(#D9D1BC, #F2ECD6, #FFFEFC);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pFinalM{
+    font-size: 18px;
+}
+
+.pVideo {
+    display: none;
+}
+
+iframe{
+    display: none;
+}
+
+.buttonVerProp{
+    padding: 1em;
+    border-radius: 15px;
+    border: 5px solid black;
+    background-color: transparent;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+
+
+/*------------------------------------- FinalMain ------------------------------------------------------- */
+
+/*------------------------------------- MEDIASQ ------------------------------------------------------- */
+
+@media (min-width:769px) and (max-width:1023px) {
+
+    /* header nav ul {
+        height: 5em;
+        background-color: black;
+        list-style-type: none;
+
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    a{
+        font-size: 20px;
+    } */
+
+    .hero {
+        height: 70vh;
+    
+    }
+    
+    .divIndex{
+        padding-top: 70px;
+        gap:70px;
+    
+    }
+    
+    .divIndex2 h1{
+        font-size: 40px;
+    }
+
+    .divIndex2 h2{
+        font-size: 35px;
+    }
+    
+    .pMain {
+        font-size: 30px;
+    }
+
+    .pUbicacionB, .pUbicacionW, .pDescripcionB, .pDescripcionW{
+        font-size: 38px;
+    }
+
+    .buttonBlack, .buttonWhite, .pFinalM, .buttonVerProp{        
+        font-size: 22px;
+    }
+
+    .footer {
+        color: white;
+        font-size: 35px;
+        background-color: black;
+        height: auto;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer_icons{
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+        font-size: 25px;
+    }
+}
+
+@media (min-width:1024px) {
+
+    /* header nav ul {
+        height: 5em;
+        list-style-type: none;
+        background-color: black;
+        list-style-type: none;
+
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-around;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+    
+    a{
+        font-size: 22px;
+    } */
+
+    .hero {
+        background-color: red;
+        background-image: url(../img/fondos/fotofondo1.jpg);
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh;
+    
+    }
+    
+    .divIndex{
+        padding-top: 100px;
+        gap:100px;
+    
+    }
+
+    .divIndex2 h1{
+        font-size: 60px;
+    }
+
+    .divIndex2 h2{
+        font-size: 42px;
+    }
+
+    .divIndex p{
+        font-size: 40px;
+    }
+
+    
+    .divIndex2{
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 35px;
+    }
+
+    .seccionBlack{
+        grid-template-columns: 60% 40% ;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "ubi ubi"
+        "img desc"
+        "boton boton"
+        ;
+        
+    }
+
+    .pUbicacionB, .pUbicacionW{
+        font-size: 50px;
+    }
+        
+    .pDescripcionB, .pDescripcionW{
+        margin-top:150px;
+        margin-bottom: 0px;
+        grid-area:desc;
+        font-size: 40px;
+    }
+    
+    .buttonBlack{
+        font-size: 28px;
+    }
+
+    .seccionWhite{
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "ubi ubi"
+        "desc img"
+        "boton boton"
+        ;
+        
+    }
+
+    .buttonWhite{
+        font-size: 28px;
+    }
+
+    .finalMain{
+        background-image: linear-gradient(#D9D1BC, #F2ECD6, #FFFEFC);
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .buttonVerProp{
+        padding: 25px;
+        font-size: 28px;
+        
+    }
+
+    .pFinalM{
+        display: none;
+    }
+
+    .pVideo {
+        display: block;
+    }
+    
+    iframe{
+        display: block;
+    }
+    
+
+    
+
+}
+
+/*------------------------------------- MEDIASQ ------------------------------------------------------- */
+
+
+/*------------------------------------- INDEX ------------------------------------------------------- */
+
+/*------------------------------------- PROPIEDADES ------------------------------------------------------- */
+
+
+.encontrarCasa{
+    background-color: red;
+    background-image: url(../img/fondos/fotofondo1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+.encontrarCasa h1{
+    font-size: 40px;
+}
+
+.encontrarCasa h2{
+    font-size: 25px;
+}
+
+.encontrarCasa p{
+    font-size: 18px;
+}
+
+.encontrarCasa form{
+    font-size: 18px;
+}
+
+@media (min-width:769px) and (max-width:1023px) {
+
+    .encontrarCasa h1{
+        font-size: 45px;
+    }
+    
+    .encontrarCasa h2{
+        font-size: 28px;
+    }
+    
+    .encontrarCasa p{
+        font-size: 22px;
+    }
+    
+    .encontrarCasa form{
+        font-size: 22px;
+    }
+
+}
+
+@media (min-width:1024px) {
+    
+    .encontrarCasa h1{
+        border: 1px solid black;
+        border-radius: 15px;
+        font-size: 50px;
+        padding: 15px;
+    }
+
+    .encontrarCasa h2{
+        font-size: 33px;
+    }
+    
+    .encontrarCasa p{
+        font-size: 25px;
+    }
+    
+    .encontrarCasa form{        
+        font-size: 25px;
+    }
+
+
+
+}
+
+
+
+
+/*------------------------------------- PROPIEDADES ------------------------------------------------------- */
+
+
+/*------------------------------------- CLIENTES ------------------------------------------------------- */
+
+.fondoCliente{
+    background-image: url(../img/clientes/fotoclientes1.jpg);
+    background-size: cover;
+    height: 80vh;
+    background-color: red;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.fondoCliente h1{
+    font-size: 40px;
+}
+
+.fondoCliente h2{
+    font-size: 25px;
+}
+
+.cards{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 70px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.card{
+    border: 1px solid black;
+    background-color: #D9D1BC;
+    text-align: center;
+    width: 300px;
+    border-radius:15px;
+}
+
+.card:hover{
+    transform: rotateZ(10deg);
+}
+
+.imgPng {
+    width: 70%;
+ }
+
+.nomCliente{
+     font-size: 30px;
+}
+
+.descCliente{
+    font-size: 20px;
+}
+
+@media (min-width:769px) and (max-width:1023px) {
+
+    .fondoCliente h1{
+        font-size: 45px;
+    }
+    
+    .fondoCliente h2{
+        font-size: 30px;
+    }
+
+    .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+}
+
+@media (min-width:1024px) {
+
+    .fondoCliente h1{
+        font-size: 50px;
+    }
+    
+    .fondoCliente h2{
+        font-size: 35px;
+    }
+
+    .cards{
+        flex-direction: row;
+        flex-wrap: wrap;        
+    }
+
+
+
+}
+
+
+
+/*------------------------------------- CLIENTES ------------------------------------------------------- */
+
+/*------------------------------------- CONTACTANOS ------------------------------------------------------- */
+
+.fondoContacto{
+    background: url(../img/fondos/fotofondo1.jpg) ;
+    background-size: cover;
+    background-position: bottom;
+    height: 150vh;
+    color: black;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.fondoContacto h1{
+    font-size: 40px;
+}
+
+.fondoContacto h2{
+    font-size: 20px;
+}
+
+.fondoContacto form{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 450px;
+    height: auto;
+    /* box-sizing: border-box; */
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+
+
+}
+
+.fondoContacto form h4{
+    color: white;
+    font-size: 30px;
+    
+}
+
+.fondoContacto input{
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    /* box-sizing: border-box; */
+    border: none;
+    font-size: 17px;
+
+
+}
+
+form textarea{
+    min-height: 50px;
+    max-height: 100px;
+    max-width: 80%;
+    min-width: 80%;
+    border: none;
+}
+
+@media (min-width:769px) and (max-width:1023px) {
+
+    .fondoContacto h1{
+        font-size: 50px;
+    }
+    
+    .fondoContacto h2{
+        font-size: 30px;
+    }
+
+
+}
+
+@media (min-width:1024px) {
+
+    .fondoContacto h1{
+        font-size: 60px;
+    }
+    
+    .fondoContacto h2{
+        font-size: 40px;
+    }
+
+
+}
+
+
+/*------------------------------------- CONTACTANOS ------------------------------------------------------- */
+
+
+
+/*------------------------------------- HISTORIA ------------------------------------------------------- */
+
+.top-historia {
+    background-image: url(../img/fondos/fotofondo1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-color: aliceblue;
+}
+    /* text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-historia > *{
+    font-size: 18px;
+    padding: 10px;
+    
+}
+
+.top-historia h1{    
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+} */
+
+@media (min-width:769px) and (max-width:1023px) {
+    
+    /* .top-historia > *{
+        font-size: 21px;
+        padding: 5px;
+    }
+    
+    .top-historia h1{    
+        font-size: 30px;
+        border: 2px solid black;
+        border-radius: 20px;
+    } */
+
+}
+
+@media (min-width:1024px) {
+    
+    /* .top-historia > *{
+        font-size: 25px;
+        padding: 10px;
+        
+    }
+    
+    .top-historia h1{    
+        font-size: 50px;
+        border: 2px solid black;
+        border-radius: 20px;
+    } */
+
+    .footer {
+        color: white;
+        font-size: 50px;
+        background-color: black;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer_icons{
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+/*------------------------------------- HISTORIA ------------------------------------------------------- */
